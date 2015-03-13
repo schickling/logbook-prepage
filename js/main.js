@@ -29,7 +29,7 @@
         request.onload = function() {
             if (request.status >= 200 && request.status < 400) {
                 var form = document.getElementById('form');
-                form.innerHTML = '<span>Vielen Dank - Wir melden uns bald bei dir!</span>';
+                form.innerHTML = '<span class="result">Vielen Dank - Wir melden uns bald bei dir!</span>';
             }
         };
 

@@ -13,7 +13,8 @@ body,
 input,
 select,
 textarea,
-button {
+button,
+.result {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15pt;
@@ -354,7 +355,8 @@ a:hover {
 #header p {
     font-size: 1.25em;
     margin: 0.75em 0 0.25em 0;
-    opacity: 0.75;
+    opacity: 0.85;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
 }
 #header form {
     margin: 1.5em 0 0 0;
@@ -373,11 +375,13 @@ a:hover {
     border: 0;
     cursor: pointer;
 }
-#header span {
+#header .result {
     padding: 1em 2em;
     color: #FFF;
     background: #4CAF50;
     border-radius: 3px;
+    text-align: center;
+    font-size: 0.7em !important;
 }
 /* Footer */
 

@@ -6,7 +6,7 @@
 
 /* Basic */
 
-	body, input, select, textarea, button {
+	body, input, select, textarea, button, .result {
 		font-size: 15pt;
     width: 48%;
 	}
