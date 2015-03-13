@@ -373,6 +373,12 @@ a:hover {
     border: 0;
     cursor: pointer;
 }
+#header span {
+    padding: 1em 2em;
+    color: #FFF;
+    background: #4CAF50;
+    border-radius: 3px;
+}
 /* Footer */
 
 #footer {
