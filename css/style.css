@@ -123,16 +123,21 @@ a:hover {
 /* BG */
 
 #cebit {
-  background: url("images/cebit.jpg");
-  background-size: 100%;
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  border-radius: 5px;
+    background: url("images/cebit.jpg");
+    background-size: 100%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 5px;
 }
-
+@media (max-width: 400px) {
+    #cebit {
+        width: 50px;
+        height: 50px;
+    }
+}
 #bg {
     -moz-animation: bg 60s linear infinite;
     -webkit-animation: bg 60s linear infinite;
@@ -393,6 +398,26 @@ a:hover {
     border-radius: 3px;
     text-align: center;
     font-size: 0.7em !important;
+}
+
+#store {
+    margin: 4em 0 -2em 0;
+}
+
+#store a {
+  border: 0;
+}
+
+#store img {
+    margin: 0.2em;
+    width: 48%;
+    width: calc(48% - 0.4em);
+    max-width: 150px;
+    max-width: calc(150px - 0.4em);
+}
+
+#store img.ios {
+  opacity: 0.5;
 }
 /* Footer */
 
