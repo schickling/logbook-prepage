@@ -399,25 +399,26 @@ a:hover {
     text-align: center;
     font-size: 0.7em !important;
 }
-
 #store {
     margin: 4em 0 -2em 0;
 }
-
-#store a {
-  border: 0;
-}
-
-#store img {
+#store div {
+    display: inline-block;
     margin: 0.2em;
     width: 48%;
     width: calc(48% - 0.4em);
     max-width: 150px;
     max-width: calc(150px - 0.4em);
 }
-
-#store img.ios {
-  opacity: 0.5;
+#store a {
+    border: 0;
+}
+#store img {
+  width: 100%;
+  height: auto;
+}
+#store img {} #store img.ios {
+    opacity: 0.5;
 }
 /* Footer */
 
