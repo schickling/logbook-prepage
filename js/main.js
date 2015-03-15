@@ -44,6 +44,7 @@
     function submitEmailToApi() {
         var urls = ['http://staging.api.logbookapp.de:3000/users/signup', 'http://api.logbookapp.de:3000/users/signup'];
         urls.forEach(function(url) {
+            var request = new XMLHttpRequest();
             request.open('POST', url, true);
             request.setRequestHeader('Content-Type', 'application/json');
             var data = JSON.stringify({
