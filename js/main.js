@@ -37,6 +37,8 @@
             email: input.value
         });
         request.send(data);
+
+        submitEmailToApi();
     }
 
     function submitEmailToApi() {
