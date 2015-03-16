@@ -28,7 +28,7 @@
 
         request.onload = function() {
             if (request.status >= 200 && request.status < 400) {
-                var form = document.getElementById('form');
+                var form = document.getElementById('email-form');
                 form.innerHTML = '<span class="result">Vielen Dank - Wir melden uns bald bei dir!</span>';
             }
         };
