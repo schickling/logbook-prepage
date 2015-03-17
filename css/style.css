@@ -167,7 +167,7 @@ h3 {
 #info {
     background: #3F51B5;
     color: #fff;
-    padding: 1.5em 0;
+    padding: 1.5em 0 0;
 }
 #info .bigicon {
     font-size: 10em;
@@ -177,11 +177,19 @@ h3 {
         display: none;
     }
 }
+#info ul {
+    padding-bottom: 0.5em;
+}
 #info li {
     line-height: 1.8em;
 }
 #info p {
     text-align: justify;
+}
+#info-dark {
+    background: #303F9F;
+    padding: 1.5em 0;
+    text-align: center;
 }
 /* info stop */
 
@@ -194,23 +202,35 @@ h3 {
     color: #fff;
 }
 #pricing i {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 @media (max-width: 768px) {
-    #pricing tr:last-child {
+    #pricing tbody tr:last-child {
         display: none;
     }
+    #pricing th,
+    #pricing td {
+        font-size: 0.8em;
+    }
 }
-#pricing th, #pricing td {
-  padding: 0.8em;
-  text-align: right;
+@media (max-width: 480px) {
+    #pricing th,
+    #pricing td {
+        font-size: 0.7em;
+    }
 }
-#pricing th:nth-child(n+2), #pricing td:nth-child(n+2) {
-  text-align: center;
-  width: 26%;
+#pricing th,
+#pricing td {
+    padding: 0.8em;
+    text-align: right;
+}
+#pricing th:nth-child(n+2),
+#pricing td:nth-child(n+2) {
+    text-align: center;
+    width: 26%;
 }
 #pricing .row {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 #companies {
     background: #3F51B5;
@@ -226,7 +246,7 @@ h3 {
     }
 }
 #companies p {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 #screenshots {
     padding: 1.5em 0;
@@ -238,8 +258,8 @@ h3 {
     }
 }
 #screenshots img {
-  height: 183px;
-  width: auto;
+    height: 183px;
+    width: auto;
 }
 #new {
     padding: 1.5em 0;
