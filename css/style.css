@@ -202,7 +202,7 @@ h3 {
     }
 }
 #pricing th, #pricing td {
-  padding: 0.9em;
+  padding: 0.8em;
   text-align: right;
 }
 #pricing th:nth-child(n+2), #pricing td:nth-child(n+2) {
