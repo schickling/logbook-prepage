@@ -185,6 +185,28 @@ h3 {
 }
 /* info stop */
 
+#pricing {
+    padding: 1.5em 0;
+    background: #E91E63;
+    color: #fff;
+}
+#pricing * {
+    color: #fff;
+}
+#pricing i {
+  font-size: 1.2em;
+}
+#pricing th, #pricing td {
+  padding: 0.9em;
+  text-align: right;
+}
+#pricing th:nth-child(n+2), #pricing td:nth-child(n+2) {
+  text-align: center;
+  width: 26%;
+}
+#pricing .row {
+  padding: 0 15px;
+}
 #companies {
     background: #3F51B5;
     color: #fff;
@@ -200,6 +222,19 @@ h3 {
 }
 #companies p {
   font-size: 0.8em;
+}
+#screenshots {
+    padding: 1.5em 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    #screenshots {
+        display: none;
+    }
+}
+#screenshots img {
+  height: 183px;
+  width: auto;
 }
 #new {
     padding: 1.5em 0;
