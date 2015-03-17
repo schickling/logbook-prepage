@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <!--[if lte IE 8]><script src="lib/js/html5shiv.js"></script><![endif]-->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
     <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
     <link href="lib/css/roboto.min.css" rel="stylesheet">
     <link href="lib/css/material.min.css" rel="stylesheet">
@@ -25,8 +25,17 @@
         <div id="overlay"></div>
         <div id="cebit"></div>
         <div class="container">
-            <div class="row" id="logo">
-                <h1><img src="images/white.png" alt="Logo" /> logbook</h1>
+            <div id="logo">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="logo-headline">
+                            <img src="images/white.png" alt="Logo" />logbook
+                        </div>
+                    </div>
+                    <div id="logo-desc" class="col-sm-6 right">
+                        Vollautomatisches Fahrtenbuchapp
+                    </div>
+                </div>
             </div>
             <div class="row" id="video-iframe">
                 <div id="video-iframe-wrapper">
@@ -72,30 +81,42 @@
     <section id="faq">
         <div class="container">
             <h3>Häufig gestellte Fragen</h3>
-            <h4>Was brauche ich um Logbook benutzen zu können?</h4>
-            <p>Logbook erfasst ortsunabängige Daten über die OBDII Schnittstelle ihres
-                Fahrzeuges. Daher ist Logbook mit allen Benzinbetriebenen Fahrzeugen
-                ab Baujahr 2001 und Dieselbetriebenen Fahrzeugen ab Baujahr 2004
-                kompatibel. <a href="http://www.amazon.de/iHarbort%C2%AE-Bluetooth-Diagnosescanner-DiagnoseTester-Hersteller/dp/B00ALQE360/ref=sr_1_1?ie=UTF8&qid=1426549809&sr=8-1&keywords=odb2+bluetooth">Amazon-Link</a>
-            </p>
-            <h4>Was brauche ich um Logbook benutzen zu können?</h4>
-            <p>Logbook erfasst ortsunabängige Daten über die OBDII Schnittstelle ihres
-                Fahrzeuges. Daher ist Logbook mit allen Benzinbetriebenen Fahrzeugen
-                ab Baujahr 2001 und Dieselbetriebenen Fahrzeugen ab Baujahr 2004
-                kompatibel.
-            </p>
-            <h4>Was brauche ich um Logbook benutzen zu können?</h4>
-            <p>Logbook erfasst ortsunabängige Daten über die OBDII Schnittstelle ihres
-                Fahrzeuges. Daher ist Logbook mit allen Benzinbetriebenen Fahrzeugen
-                ab Baujahr 2001 und Dieselbetriebenen Fahrzeugen ab Baujahr 2004
-                kompatibel.
-            </p>
-            <h4>Was brauche ich um Logbook benutzen zu können?</h4>
-            <p>Logbook erfasst ortsunabängige Daten über die OBDII Schnittstelle ihres
-                Fahrzeuges. Daher ist Logbook mit allen Benzinbetriebenen Fahrzeugen
-                ab Baujahr 2001 und Dieselbetriebenen Fahrzeugen ab Baujahr 2004
-                kompatibel.
-            </p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Was brauche ich um Logbook benutzen zu können?</h4>
+                    <p>Logbook erfasst ortsunabängige Daten über die OBDII Schnittstelle
+                        ihres Fahrzeuges. Daher ist Logbook mit allen Benzinbetriebenen
+                        Fahrzeugen ab Baujahr 2001 und Dieselbetriebenen Fahrzeugen
+                        ab Baujahr 2004 kompatibel. <a href="http://www.amazon.de/iHarbort%C2%AE-Bluetooth-Diagnosescanner-DiagnoseTester-Hersteller/dp/B00ALQE360/ref=sr_1_1?ie=UTF8&qid=1426549809&sr=8-1&keywords=odb2+bluetooth">Amazon-Link</a>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Funktioniert die App mit jedem Fahrzeug?</h4>
+                    <p>Die App funktioniert mit
+                        <ul>
+                            <li>amerikanischen Fahrzeugen mit Verbrennungsmotor ab
+                                1996</li>
+                            <li>allen Benzin-Fahrzeugen ab 2001</li>
+                            <li>allen Diesel-Fahrzeugen ab 2004</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Kann ich mehrere Fahrzeuge verwenden?</h4>
+                    <p>Ja.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Können Dritte die Daten einsehen?</h4>
+                    <p>Nein. Direkten Zugriff auf die Daten hat nur der Benutzer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new">
+        <div class="container">
         </div>
     </section>
 
@@ -133,8 +154,8 @@
         ga('set', 'anonymizeIp', true);
         ga('send', 'pageview');
     </script>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="lib/js/jquery-1.10.2.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/ripples.min.js"></script>
     <script src="lib/js/material.min.js"></script>
     <script src="js/main.js"></script>
