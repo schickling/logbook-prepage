@@ -196,6 +196,11 @@ h3 {
 #pricing i {
   font-size: 1.2em;
 }
+@media (max-width: 768px) {
+    #pricing tr:last-child {
+        display: none;
+    }
+}
 #pricing th, #pricing td {
   padding: 0.9em;
   text-align: right;
