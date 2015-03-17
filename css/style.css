@@ -19,15 +19,15 @@ h3 {
     margin: 0.8em 0;
 }
 .valign {
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  text-align: center;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
 }
 /* header start */
 
@@ -91,8 +91,8 @@ h3 {
 }
 @media (max-width: 768px) {
     #logo-headline {
-      font-size: 1.4em;
-    height: 1.4em;
+        font-size: 1.4em;
+        height: 1.4em;
     }
 }
 #logo-desc {
@@ -169,11 +169,11 @@ h3 {
     color: #fff;
     padding: 1.5em 0;
 }
-#info i {
+#info .bigicon {
     font-size: 10em;
 }
 @media (max-width: 768px) {
-    #info i {
+    #info .bigicon {
         display: none;
     }
 }
@@ -185,6 +185,22 @@ h3 {
 }
 /* info stop */
 
+#companies {
+    background: #3F51B5;
+    color: #fff;
+    padding: 1.5em 0;
+}
+#companies i {
+    font-size: 7em;
+}
+@media (max-width: 768px) {
+    #companies i {
+        display: none;
+    }
+}
+#companies p {
+  font-size: 0.8em;
+}
 #new {
     padding: 1.5em 0;
     width: 100%;
@@ -200,6 +216,7 @@ h3 {
 #faq p {
     font-size: 0.7em;
     padding: 0 0 0.5em;
+    text-align: justify;
 }
 #footer {
     padding: 1.5em 0 0;
